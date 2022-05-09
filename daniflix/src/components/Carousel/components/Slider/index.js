@@ -16,6 +16,7 @@ const Container = styled.ul`
     height: 30px;
     transform: initial;
     &:before {
+      
       font-size: 30px;
     }
   }
@@ -35,24 +36,25 @@ export const SliderItem = styled.li`
     width: 298px;
     height: 197px;
     object-fit: cover;
+    
   }
 `;
 
 
 const Slider = ({ children }) => (
-    <Container>
-        <SlickSlider {...{
-            dots: false,
-            infinite: false,
-            speed: 300,
-            centerMode: false,
-            variableWidth: true,
-            adaptiveHeight: true,
-        }}
-        >
-            {children}
-        </SlickSlider>
-    </Container>
+  <Container>
+    <SlickSlider {...{
+      dots: false,
+      infinite: true,
+      speed: 300,
+      centerMode: false,
+      variableWidth: true,
+      adaptiveHeight: true,
+    }}
+    >
+      {children}
+    </SlickSlider>
+  </Container>
 );
 
 export default Slider; 

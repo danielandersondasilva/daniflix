@@ -9,8 +9,20 @@ export default function CadastroCategoria() {
         <PageDefault>
             <h1>
                 Cadastro de Categoria
-
             </h1>
+            <fomr>
+                <label>
+
+                    Nome da Categoria:
+                    <input type="text" />
+                </label>
+                <button>
+                    Cadastrar
+                </button>
+            </fomr>
+
+
+
             <Link to="/">
                 Ir para home
             </Link>
